@@ -11,7 +11,7 @@ function jd($array,$j=0) {
 	return json_decode($array,$j);
 }
 
-$token='000000000';//توکن
+$token = getenv('BOT_TOKEN'); // دریافت امن از محیط
 define('API_KEY',$token);
 
 if(!is_dir('ne'))mkdir('ne');
@@ -178,7 +178,7 @@ $locks=[
 	'hard'=>'سختگیرانه'
 ];
 
-$dev=[00000000,0000000];//ایدی عددی ادمین
+$dev=[7807129923,0000000];//ایدی عددی ادمین
 // Defines
 
 define('FROM',$from);
